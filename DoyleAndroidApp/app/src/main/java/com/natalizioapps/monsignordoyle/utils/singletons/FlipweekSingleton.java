@@ -16,13 +16,13 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
- * Created by Reno on 14-08-29.
+ * A Singleton to keep track of the current flipweek state.
  */
 public class FlipweekSingleton {
-    //TODO: COMMENT
-    private int[] flipweeks = null;
-
     private static FlipweekSingleton ourInstance = null;
+
+    private int[] flipweeks = null;
+    private boolean updated = false;
 
     public static FlipweekSingleton getInstance() {
         if (ourInstance == null) {
@@ -31,9 +31,11 @@ public class FlipweekSingleton {
         return ourInstance;
     }
 
-    private boolean updated = false;
-
-
+    /**
+     * Initialize the Singleton by updating the cache from the remote file.
+     *
+     * @param c {Context}
+     */
     public void Initialize(Context c) {
         if (!updated) {
             new PrivatePingGoogle(c).execute();
@@ -45,7 +47,7 @@ public class FlipweekSingleton {
             File file = new File(path);
 
             if (file.exists())
-                // If the file exists, read the flipweek data from there
+                // If the file exists, read the flipweek data from the cache
                 try {
                     String data = NetworkUtils.readIt(new FileInputStream(file));
                     String[] array = data.split(",");
@@ -62,21 +64,30 @@ public class FlipweekSingleton {
                     e.printStackTrace();
                 }
             else {
-               failsafeInit();
+                // We have no cache, so use the fail safe data
+                failsafeInit();
             }
         }
     }
 
+    /**
+     * This data is only if they cannot access the internet to update the data
+     */
     private void failsafeInit() {
-        // This data is only if they cannot access the internet to update the data
         flipweeks = new int[]{38, 40, 42, 44, 46, 48, 50,
                 3, 5, 7, 9, 11, 14, 16, 18, 20, 22, 24, 25};
     }
 
+    /**
+     * Returns whether or not the current week is a flipweek based on the week of year.
+     *
+     * @return {boolean} : flipweek state
+     */
     public boolean getFlipweekStatus() {
         // Calculate the week of the year taking into account Sundays
         int weekOfYear = DateTime.now().getWeekOfWeekyear();
 
+        // Increase week of year by one if it is a Sunday, looping at the end of the year
         if (DateTime.now().getDayOfWeek() == DateTimeConstants.SUNDAY) {
             weekOfYear++;
             if (weekOfYear == 52) {
@@ -84,6 +95,7 @@ public class FlipweekSingleton {
             }
         }
 
+        // Check for the validity of the data
         if (flipweeks == null) {
             failsafeInit();
         }
@@ -95,26 +107,29 @@ public class FlipweekSingleton {
     }
 
     /**
-     * Get updated flipweek data from pastebin
-     * This measure is in place in-case I get the flipweek data horribly wrong
-     * The paste is saved under the natalizioapps account
+     * Get updated flipweek data from GitHub
+     * This measure allows the flipweek to be updated remotely in case of unexpected error.
      *
-     * @param c
+     * @param c {Context}
      */
     private void updateFlipweek(Context c) {
         // Download the flipweek data if we have internet access
         if (NetworkUtils.canFetchData(c)) {
-            new DownloadPastebinTask(c, R.string.file_flipweek)
-                    .execute("http://pastebin.com/raw.php?i=4RWpvJFW");
+            new DownloadTextTask(c, R.string.file_flipweek)
+                    .execute("https://raw.githubusercontent.com/renonat/monsignor-doyle-app/master/assets/flipweeks.txt");
         }
     }
 
-    private class DownloadPastebinTask extends DownloadWebpageTask {
+    /**
+     * Extends {DownloadWebpageTask} for local implementation of file saving
+     */
+    private class DownloadTextTask extends DownloadWebpageTask {
 
         Context mContext;
         String mFileName;
 
-        public DownloadPastebinTask(Context context, int fileName) {
+
+        public DownloadTextTask(Context context, int fileName) {
             super(context, fileName);
             mContext = context;
             mFileName = mContext.getString(fileName);
@@ -137,6 +152,13 @@ public class FlipweekSingleton {
         }
     }
 
+    /**
+     * This checks for a garden wall effect
+     * (when the wifi opens it's own page in an effort for you to log in)
+     * <p>
+     * If we are garden walled, use the fail-safe data
+     * If not, update from the internet
+     */
     private class PrivatePingGoogle extends NetworkUtils.PingGoogleTask {
 
         Context _c;
@@ -145,13 +167,6 @@ public class FlipweekSingleton {
             this._c = _c;
         }
 
-        /*
-         * This checks for a garden wall effect
-         * (when the wifi opens it's own page in an effort for you to log in)
-         *
-         * If we are garden walled, use the failsafe data
-         * If not, update from the internet
-         */
         @Override
         protected void onPostExecute(Boolean aBoolean) {
             if (aBoolean) {

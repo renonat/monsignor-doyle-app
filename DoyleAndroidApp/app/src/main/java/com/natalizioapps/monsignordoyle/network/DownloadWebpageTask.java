@@ -11,13 +11,15 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-// Uses AsyncTask to create a task away from the main UI thread. This task takes a
-// URL string and uses it to create an HttpUrlConnection. Once the connection
-// has been established, the AsyncTask downloads the contents of the webpage as
-// an InputStream. Finally, the InputStream is converted into a string, which is
-// displayed in the UI by the AsyncTask's onPostExecute method.
+/**
+ * Uses AsyncTask to create a task away from the main UI thread. This task takes a
+ * URL string and uses it to create an HttpUrlConnection. Once the connection
+ * has been established, the AsyncTask downloads the contents of the webpage as
+ * an InputStream. Finally, the InputStream is converted into a string, which is
+ * displayed in the UI by the AsyncTask's onPostExecute method.
+ */
 public class DownloadWebpageTask extends AsyncTask<String, Void, String> {
-    //TODO: COMMENT
+
     private static Context mContext;
 
     private static String DEBUG_TAG = "DOWNLOAD_WEBPAGE_TASK";
@@ -39,9 +41,17 @@ public class DownloadWebpageTask extends AsyncTask<String, Void, String> {
         }
     }
 
-    // Given a URL, establishes an HttpUrlConnection and retrieves
-    // the web page content as a InputStream, which it returns as
-    // a string.
+    //
+
+    /**
+     * Given a URL, establishes an HttpUrlConnection and retrieves
+     * the web page content as a InputStream, which it returns as
+     * a string.
+     *
+     * @param myurl {String} : URL as a String
+     * @return {String} : the raw text from the
+     * @throws IOException
+     */
     protected String downloadUrl(String myurl) throws IOException {
         InputStream is = null;
 

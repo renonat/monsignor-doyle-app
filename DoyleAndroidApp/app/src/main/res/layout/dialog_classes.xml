@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/edit_class_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/edit_class_circle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edit_class_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/edit_class_circle"
+            android:layout_toRightOf="@id/edit_class_circle"
+            android:textSize="@dimen/text_size_subhead"
+            android:textStyle="bold"
+            android:hint="Class name"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            app:baseColor="@color/text"
+            app:floatingLabel="normal"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_class_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_class_header"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edit_class_teacher"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textSize="@dimen/text_size_subhead"
+            android:hint="Teacher"
+            android:inputType="text"
+            app:baseColor="@color/text"
+            app:floatingLabel="normal"/>
+
+        <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+            android:id="@+id/edit_class_room"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textSize="@dimen/text_size_subhead"
+            android:hint="Room number"
+            android:inputType="text"
+            app:baseColor="@color/text"
+            app:floatingLabel="normal"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

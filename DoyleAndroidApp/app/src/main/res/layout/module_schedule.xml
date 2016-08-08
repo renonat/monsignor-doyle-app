@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/module_schedule"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/flat_button_grey">
+
+    <TextView
+        android:id="@+id/module_schedule_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginBottom="8dp"
+        android:text="SCHEDULE"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size_subhead"/>
+
+    <TextView
+        android:id="@+id/module_schedule_slot1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/module_schedule_header"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="8dp"
+        android:text="Period 1"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size_body"/>
+
+    <TextView
+        android:id="@+id/module_schedule_slot1_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/module_schedule_header"
+        android:layout_marginTop="8dp"
+        android:text="8:56"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size_body"/>
+
+    <TextView
+        android:id="@+id/module_schedule_slot2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/module_schedule_slot1_name"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="8dp"
+        android:text="Period 2"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size_body"/>
+
+    <TextView
+        android:id="@+id/module_schedule_slot2_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/module_schedule_slot1_name"
+        android:layout_marginTop="8dp"
+        android:text="8:56"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size_body"/>
+
+    <TextView
+        android:id="@+id/module_schedule_slot3_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/module_schedule_slot2_name"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="8dp"
+        android:text="Period 3"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size_body"/>
+
+    <TextView
+        android:id="@+id/module_schedule_slot3_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/module_schedule_slot2_name"
+        android:layout_marginTop="8dp"
+        android:text="8:56"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size_body"/>
+
+    <TextView
+        android:id="@+id/module_schedule_slot4_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/module_schedule_slot3_name"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="8dp"
+        android:text="Period 4"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size_body"/>
+
+    <TextView
+        android:id="@+id/module_schedule_slot4_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/module_schedule_slot3_name"
+        android:layout_marginTop="8dp"
+        android:text="8:56"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size_body"/>
+
+    <TextView
+        android:id="@+id/module_schedule_slot5_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/module_schedule_slot4_name"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="8dp"
+        android:text="Period 4"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size_body"/>
+
+    <TextView
+        android:id="@+id/module_schedule_slot5_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/module_schedule_slot4_name"
+        android:layout_marginTop="8dp"
+        android:text="8:56"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size_body"/>
+</RelativeLayout>

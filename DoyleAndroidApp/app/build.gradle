@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '24.0.1'
+    defaultConfig {
+        applicationId "com.natalizioapps.monsignordoyle"
+        minSdkVersion 17
+        targetSdkVersion 24
+        versionCode 3
+        versionName "2.01"
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    productFlavors {
+        doyle {
+            applicationId "com.natalizioapps.monsignordoyle"
+        }
+        stbenedict {
+            applicationId "com.natalizioapps.stbenedict"
+        }
+        stmary {
+            applicationId "com.natalizioapps.stmary"
+        }
+        resurrection {
+            applicationId "com.natalizioapps.resurrection"
+        }
+        stdavid {
+            applicationId "com.natalizioapps.stdavid"
+        }
+        wcdsb {
+            applicationId "com.natalizioapps.wcdsb"
+        }
+    }
+    buildTypes {
+        debug {
+
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':materialdesign')
+    compile 'com.jakewharton:butterknife:5.1.2'
+    compile 'joda-time:joda-time:2.4'
+    compile('com.googlecode.json-simple:json-simple:1.1.1') {
+        exclude module: 'junit'
+    }
+    compile 'com.rengwuxian.materialedittext:library:1.7.1'
+    compile 'com.android.support:support-v4:24.1.1'
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:cardview-v7:24.1.1'
+    compile 'com.android.support:support-v13:24.1.1'
+    compile 'com.android.support:support-annotations:24.1.1'
+    compile 'com.android.support:design:24.1.1'
+    compile 'org.apache.commons:commons-lang3:3.3.2'
+    compile 'me.relex:circleindicator:1.1.3@aar'
+    compile 'org.javatuples:javatuples:1.2'
+}

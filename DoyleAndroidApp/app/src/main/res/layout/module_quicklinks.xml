@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/module_quicklinks_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="16dp"
+        android:text="@string/about_quick_links"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size_body"
+        android:gravity="start|center_vertical"/>
+
+    <com.natalizioapps.monsignordoyle.ui.views.AvatarListItem
+        android:id="@+id/module_quicklinks_website"
+        app:avatarColor="@color/material_blue_500"
+        app:avatarSrc="@drawable/ic_web"
+        app:textMain="@string/about_website"
+        app:textSub="http://doyle.wcdsb.ca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flat_button_grey"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="72dp"
+        android:background="@color/divider"/>
+
+    <com.natalizioapps.monsignordoyle.ui.views.AvatarListItem
+        android:id="@+id/module_quicklinks_cancellations"
+        app:avatarColor="@color/material_blue_600"
+        app:avatarSrc="@drawable/ic_web"
+        app:textMain="@string/about_cancellations"
+        app:textSub="https://bpweb.stswr.ca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flat_button_grey"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="72dp"
+        android:background="@color/divider"/>
+
+    <com.natalizioapps.monsignordoyle.ui.views.AvatarListItem
+        android:id="@+id/module_quicklinks_classnet"
+        app:avatarColor="@color/material_blue_500"
+        app:avatarSrc="@drawable/ic_web"
+        app:textMain="@string/about_classnet"
+        app:textSub="https://classnet.wcdsb.ca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flat_button_grey"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="72dp"
+        android:background="@color/divider"/>
+
+    <com.natalizioapps.monsignordoyle.ui.views.AvatarListItem
+        android:id="@+id/module_quicklinks_careercruising"
+        app:avatarColor="@color/material_blue_500"
+        app:avatarSrc="@drawable/ic_web"
+        app:textMain="@string/about_career_cruising"
+        app:textSub="https://www2.careercruising.com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flat_button_grey"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="72dp"
+        android:background="@color/divider"/>
+
+    <com.natalizioapps.monsignordoyle.ui.views.AvatarListItem
+        android:id="@+id/module_quicklinks_d2l"
+        app:avatarColor="@color/material_blue_500"
+        app:avatarSrc="@drawable/ic_web"
+        app:textMain="@string/about_d2l"
+        app:textSub="https://wcdsb.elearningontario.ca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flat_button_grey"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="72dp"
+        android:background="@color/divider"/>
+
+    <com.natalizioapps.monsignordoyle.ui.views.AvatarListItem
+        android:id="@+id/module_quicklinks_sis"
+        app:avatarColor="@color/material_blue_500"
+        app:avatarSrc="@drawable/ic_web"
+        app:textMain="@string/about_sis"
+        app:textSub="https://sis.wcdsb.ca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flat_button_grey"/>
+
+</LinearLayout>

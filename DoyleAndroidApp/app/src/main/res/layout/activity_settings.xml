@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/settings_schedule_header"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="16dp"
+                android:text="Schedule"
+                android:textColor="@color/text"
+                android:textSize="@dimen/text_size_body"
+                android:gravity="start|center_vertical"/>
+
+            <FrameLayout
+                android:id="@+id/settings_placeholder_classes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="72dp"
+                android:layout_marginStart="72dp"
+                android:background="@color/divider"/>
+
+            <TextView
+                android:id="@+id/settings_about_header"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="16dp"
+                android:text="About"
+                android:textColor="@color/text"
+                android:textSize="@dimen/text_size_body"
+                android:gravity="start|center_vertical"/>
+
+            <com.natalizioapps.monsignordoyle.ui.views.AvatarListItem
+                android:id="@+id/settings_createdby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/flat_button_grey"
+                app:avatarColor="@color/material_amber_500"
+                app:avatarSrc="@drawable/ic_user"
+                app:textMain="Created by"
+                app:textSub="Reno Natalizio"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="72dp"
+                android:layout_marginStart="72dp"
+                android:background="@color/divider"/>
+
+            <com.natalizioapps.monsignordoyle.ui.views.AvatarListItem
+                android:id="@+id/settings_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/flat_button_grey"
+                app:avatarColor="@color/material_blue_500"
+                app:avatarSrc="@drawable/ic_email"
+                app:textMain="Email me"
+                app:textSub="get2natalizio@gmail.com"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

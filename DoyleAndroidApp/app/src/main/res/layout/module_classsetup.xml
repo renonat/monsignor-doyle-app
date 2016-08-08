@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.natalizioapps.monsignordoyle.ui.views.AvatarListItem
+        android:id="@+id/classetup_b_school"
+        app:avatarColor="@color/material_teal_500"
+        app:textMain="@string/settings_school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flat_button_grey"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        android:id="@+id/classetup_ll_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.natalizioapps.monsignordoyle.ui.views.AvatarListItem
+            android:id="@+id/classetup_b_period1"
+            app:avatarColor="@color/material_teal_500"
+            app:textMain="@string/settings_period1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flat_button_grey"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="72dp"
+            android:layout_marginStart="72dp"
+            android:background="@color/divider"/>
+
+        <com.natalizioapps.monsignordoyle.ui.views.AvatarListItem
+            android:id="@+id/classetup_b_period2"
+            app:avatarColor="@color/material_teal_500"
+            app:textMain="@string/settings_period2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flat_button_grey"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="72dp"
+            android:layout_marginStart="72dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            android:id="@+id/classetup_ll_lunch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.natalizioapps.monsignordoyle.ui.views.AvatarListItem
+                android:id="@+id/classetup_b_lunch"
+                app:avatarColor="@color/material_teal_500"
+                app:textMain="@string/settings_lunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/flat_button_grey"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="72dp"
+                android:layout_marginStart="72dp"
+                android:background="@color/divider"/>
+        </LinearLayout>
+
+        <com.natalizioapps.monsignordoyle.ui.views.AvatarListItem
+            android:id="@+id/classetup_b_period3"
+            app:avatarColor="@color/material_teal_500"
+            app:textMain="@string/settings_period3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flat_button_grey"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="72dp"
+            android:layout_marginStart="72dp"
+            android:background="@color/divider"/>
+
+        <com.natalizioapps.monsignordoyle.ui.views.AvatarListItem
+            android:id="@+id/classetup_b_period4"
+            app:avatarColor="@color/material_teal_500"
+            app:textMain="@string/settings_period4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flat_button_grey"/>
+    </LinearLayout>
+</LinearLayout>

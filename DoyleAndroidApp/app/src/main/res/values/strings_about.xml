@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="about_phone_title">School Phone</string>
+    <string name="about_attendance">Attendance</string>
+    <string name="about_office">Office Hours</string>
+    <string name="about_office_hours">Monday&#8211;Friday 7:30am&#8211;3:30pm</string>
+    <string name="about_address">Address</string>
+    <string name="about_address_address">185 Myers Road, Cambridge ON, N1R 7H2</string>
+    <string name="about_school_map">School Map</string>
+    <string name="about_school_map_desc">An interactive map of the school</string>
+    <string name="about_quick_links">Quick Links</string>
+    <string name="about_website">School Website</string>
+    <string name="about_classnet">Classnet</string>
+    <string name="about_d2l">Desire2Learn elearning</string>
+    <string name="about_career_cruising">Career Cruising</string>
+    <string name="about_cancellations">Cancellations</string>
+    <string name="about_sis">Student Information System</string>
+
+</resources>

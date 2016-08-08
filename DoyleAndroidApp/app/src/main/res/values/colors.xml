@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="darkgrey20">#33999999</color>
+    <color name="darkgrey40">#97999999</color>
+
+    <color name="lightgrey">#40cccccc</color>
+
+    <color name="text">#de000000</color>
+    <color name="textsecondary">#8a000000</color>
+    <color name="divider">#1f000000</color>
+
+    <color name="text_teal">#004D40</color>
+
+    <color name="background">#ffeeeeee</color>
+</resources>

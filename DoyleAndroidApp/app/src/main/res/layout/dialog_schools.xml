@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minWidth="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/dialog_schools_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/dialog_schools_mondoyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/school_mondoyle"
+            android:textColor="@color/text_teal"
+            android:textSize="@dimen/text_size_subhead"
+            android:buttonTint="@color/text_teal"
+            android:drawableRight="@drawable/sch_mondoyle"/>
+
+        <RadioButton
+            android:id="@+id/dialog_schools_benedicts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/school_stbenedict"
+            android:textColor="@color/text_teal"
+            android:textSize="@dimen/text_size_subhead"
+            android:buttonTint="@color/text_teal"
+            android:drawableRight="@drawable/sch_benedicts"/>
+
+        <RadioButton
+            android:id="@+id/dialog_schools_marys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/school_stmary"
+            android:textColor="@color/text_teal"
+            android:textSize="@dimen/text_size_subhead"
+            android:buttonTint="@color/text_teal"
+            android:drawableRight="@drawable/sch_marys"/>
+
+        <RadioButton
+            android:id="@+id/dialog_schools_davids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/school_stdavid"
+            android:textColor="@color/text_teal"
+            android:textSize="@dimen/text_size_subhead"
+            android:buttonTint="@color/text_teal"
+            android:drawableRight="@drawable/sch_davids"/>
+
+        <RadioButton
+            android:id="@+id/dialog_schools_resurrection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/school_resurrection"
+            android:textColor="@color/text_teal"
+            android:textSize="@dimen/text_size_subhead"
+            android:buttonTint="@color/text_teal"
+            android:drawableRight="@drawable/sch_resurrection"/>
+
+    </RadioGroup>
+</LinearLayout>

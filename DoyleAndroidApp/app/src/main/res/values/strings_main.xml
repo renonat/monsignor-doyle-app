@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="main_about">ABOUT</string>
+    <string name="main_weather">WEATHER</string>
+    <string name="main_flipweek">FLIPWEEK</string>
+    <string name="main_yes">YES</string>
+    <string name="main_no">NO</string>
+    <string name="main_credits">Created by Reno Natalizio</string>
+    <string name="main_connect">CONNECT</string>
+    <string name="main_classes">CLASSES</string>
+    <string name="main_settings">Settings</string>
+    <string name="main_calendar">CALENDAR</string>
+
+</resources>

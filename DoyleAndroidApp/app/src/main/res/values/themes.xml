@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorBackground">@color/background</item>
+
+        <item name="android:alertDialogTheme">@style/Theme.AppCompat.Light.Dialog.Alert</item>
+    </style>
+
+
+    <style name="PopUpTheme" parent="Welcome.Base">
+        <item name="android:background">@color/material_grey_900</item>
+    </style>
+
+    <style name="Welcome.Base" parent="Base">
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/material_teal_500</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/material_teal_900</item>
+    </style>
+
+    <style name="MonDoyle.Base" parent="Base">
+        <item name="colorPrimary">@color/material_red_700</item>
+        <item name="colorPrimaryDark">@color/material_red_900</item>
+        <item name="colorAccent">@color/material_amber_A400</item>
+    </style>
+
+    <style name="Benedicts.Base" parent="Base">
+        <item name="colorPrimary">@color/material_indigo_500</item>
+        <item name="colorPrimaryDark">@color/material_indigo_900</item>
+        <item name="colorAccent">@color/material_amber_A400</item>
+    </style>
+
+    <style name="Marys.Base" parent="Base">
+        <item name="colorPrimary">@color/material_blue_500</item>
+        <item name="colorPrimaryDark">@color/material_blue_900</item>
+        <item name="colorAccent">@color/material_blue_grey_400</item>
+    </style>
+
+    <style name="Davids.Base" parent="Base">
+        <item name="colorPrimary">@color/material_green_600</item>
+        <item name="colorPrimaryDark">@color/material_green_900</item>
+        <item name="colorAccent">@color/material_indigo_A200</item>
+    </style>
+
+    <style name="Resurrection.Base" parent="Base">
+        <item name="colorPrimary">@color/material_red_500</item>
+        <item name="colorPrimaryDark">@color/material_red_900</item>
+        <item name="colorAccent">@color/material_amber_A400</item>
+    </style>
+
+</resources>

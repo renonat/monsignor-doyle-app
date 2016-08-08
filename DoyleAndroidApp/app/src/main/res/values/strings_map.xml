@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_search"> Search</string>
+    <string name="action_lockers">Show lockers</string>
+    <string name="action_rooms">Show rooms</string>
+    <string name="action_classes"> Show my classes</string>
+    <string name="action_washrooms">Show washrooms</string>
+
+</resources>

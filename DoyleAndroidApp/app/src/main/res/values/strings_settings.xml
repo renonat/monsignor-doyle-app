@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="settings_school">School</string>
+    <string name="settings_lunch">Lunch Period</string>
+    <string name="settings_period1">Period 1</string>
+    <string name="settings_period2">Period 2</string>
+    <string name="settings_period3">Period 3</string>
+    <string name="settings_period4">Period 4</string>
+
+    <string name="settings_lunch_first">First Lunch (11:49 – 12:27)</string>
+    <string name="settings_lunch_second">Second Lunch (1:11 – 1:48)</string>
+
+</resources>

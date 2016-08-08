@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.natalizioapps.monsignordoyle.ui.views.AvatarListItem
+        android:id="@+id/module_schoolmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flat_button_grey"
+        app:avatarColor="@color/material_purple_500"
+        app:avatarSrc="@drawable/ic_map"
+        app:textMain="@string/about_school_map"
+        app:textSub="@string/about_school_map_desc"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="72dp"
+        android:background="@color/divider"/>
+
+</LinearLayout>

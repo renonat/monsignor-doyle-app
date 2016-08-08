@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="card_period">Period</string>
+    <string name="card_time">Time</string>
+    <string name="card_teacher">Teacher</string>
+    <string name="card_room">Room</string>
+    <string name="card_edit">Edit</string>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/module_weather"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/row_height"
+    android:paddingLeft="@dimen/row_horizontal_padding"
+    android:paddingRight="@dimen/row_horizontal_padding"
+    android:background="@drawable/flat_button_orange">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:text="@string/main_weather"
+        android:textColor="@color/material_grey_A1000"
+        android:textSize="@dimen/text_size_subhead"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/module_weather_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/module_weather_image"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textColor="@color/material_grey_A1000"
+            android:textSize="@dimen/text_size_subhead"/>
+
+        <ImageView
+            android:id="@+id/module_weather_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:tint="@color/material_grey_A1000"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
